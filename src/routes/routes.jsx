@@ -1,17 +1,3 @@
-import Home from "../pages/home";
-import PageLayout from "../pages/page-layout";
-import NotFound from "../pages/not-found";
+import ComingSoon from "../pages/coming-soon";
 
-export const routes = [
-  {
-    path: "",
-    element: <PageLayout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-    ],
-  },
-  { path: "*", element: <NotFound /> },
-];
+export const routes = [{ path: "*", element: <ComingSoon /> }];
